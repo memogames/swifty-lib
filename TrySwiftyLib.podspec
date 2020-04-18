@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SwiftyLib.podspec' to ensure this is a
+#  Be sure to run `pod spec lint TrySwiftyLib.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -53,10 +53,12 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "" => "" }
-  # Or just: spec.author    = ""
   spec.authors            = { "memogames" => "memo.games@gmail.com" }
   spec.social_media_url   = "https://twitter.com/memogames"
+  
+  # Or just: spec.author    = ""
+  # spec.authors            = { "" => "" }
+  # spec.social_media_url   = "https://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -72,6 +74,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "10.0"
   spec.swift_version = "5.0"
   
+  # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -95,8 +98,10 @@ Pod::Spec.new do |spec|
   #
 
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.exclude_files = "Classes/Exclude"
+  
   spec.source_files  = "SwiftyLib/**/*.{h,m,swift}"
-  #spec.exclude_files = "Classes/Exclude"
+  
 
   # spec.public_header_files = "Classes/**/*.h"
 
