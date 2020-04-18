@@ -1,3 +1,3 @@
-# Install Guild
+# Install Guide
 
 pod 'TrySwiftyLib'
